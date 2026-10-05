@@ -13,7 +13,7 @@
       "requiredLogMarkers": [
         "DRAKES SLIMEFUN LABS runtime smoke marker",
         "DRAKESCRAFT LABS",
-        "DrakesCraft-Labs/drakes-slimefun-labs"
+        "SlimefunNewHorizons/drakes-slimefun-labs"
       ]
     },
     "foundation": {
@@ -28,7 +28,7 @@
       "requiredLogMarkers": [
         "DRAKES SLIMEFUN LABS runtime smoke marker",
         "DRAKESCRAFT LABS",
-        "DrakesCraft-Labs/drakes-slimefun-labs"
+        "SlimefunNewHorizons/drakes-slimefun-labs"
       ]
     },
     "foundation-galactifun2": {
@@ -51,7 +51,7 @@
       "requiredLogMarkers": [
         "DRAKES SLIMEFUN LABS runtime smoke marker",
         "DRAKESCRAFT LABS",
-        "DrakesCraft-Labs/drakes-slimefun-labs"
+        "SlimefunNewHorizons/drakes-slimefun-labs"
       ],
       "startupTimeoutSeconds": 180,
       "postReadySleepSeconds": 15
@@ -86,7 +86,7 @@
       "requiredLogMarkers": [
         "DRAKES SLIMEFUN LABS runtime smoke marker",
         "DRAKESCRAFT LABS",
-        "DrakesCraft-Labs/drakes-slimefun-labs"
+        "SlimefunNewHorizons/drakes-slimefun-labs"
       ]
     },
     "core-addons": {
@@ -107,7 +107,7 @@
       "requiredLogMarkers": [
         "DRAKES SLIMEFUN LABS runtime smoke marker",
         "DRAKESCRAFT LABS",
-        "DrakesCraft-Labs/drakes-slimefun-labs"
+        "SlimefunNewHorizons/drakes-slimefun-labs"
       ]
     },
     "monorepo-all-paper-12111": {
@@ -129,7 +129,7 @@
       "requiredLogMarkers": [
         "DRAKES SLIMEFUN LABS runtime smoke marker",
         "DRAKESCRAFT LABS",
-        "DrakesCraft-Labs/drakes-slimefun-labs"
+        "SlimefunNewHorizons/drakes-slimefun-labs"
       ]
     },
     "monorepo-all": {
@@ -150,7 +150,7 @@
       "requiredLogMarkers": [
         "DRAKES SLIMEFUN LABS runtime smoke marker",
         "DRAKESCRAFT LABS",
-        "DrakesCraft-Labs/drakes-slimefun-labs"
+        "SlimefunNewHorizons/drakes-slimefun-labs"
       ]
     }
   }

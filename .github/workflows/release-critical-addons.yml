@@ -31,7 +31,7 @@ jobs:
       - name: Checkout Slimefun core
         uses: actions/checkout@v7
         with:
-          repository: DrakesCraft-Labs/Slimefun4-Drake
+          repository: SlimefunNewHorizons/Slimefun4-Drake
           path: slimefun-core
           ref: main
 

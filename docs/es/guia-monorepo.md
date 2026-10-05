@@ -15,7 +15,7 @@
 4. **Slimefun sombreado:** tras `package` de Slimefun, Dough queda bajo `com.github.drakescraft_labs.slimefun4.libraries.dough.protection.*`. Los addons que llaman `Slimefun.getProtectionManager()` deben importar esos tipos relocados en el classpath del addon, no siempre `dev.drake.dough.protection.*` crudo. Script de ayuda: `python scripts/fix_dough_compilation_imports.py` (excluye core).
 5. **Smoke:** scripts en `scripts/smoke/` (`run-smoke-server.ps1`, `smoke_orchestrate.py`); **ProtocolLib** se intenta vía Python y fallback PowerShell. Perfiles `*-paper-12111` para Paper 1.21.11.
 6. **Releases:** workflow manual **Release monorepo JARs** → un `.jar` por addon como assets del mismo release; ver `docs/github-maintenance.md`.
-7. Si cambia el **estado** de un módulo respecto al tablero, actualizar matriz y alinear [Project 1](https://github.com/orgs/DrakesCraft-Labs/projects/1) según `docs/PROJECT_BOARD_SYNC.md`.
+7. Si cambia el **estado** de un módulo respecto al tablero, actualizar matriz y alinear [Project 1](https://github.com/orgs/SlimefunNewHorizons/projects/1) según `docs/PROJECT_BOARD_SYNC.md`.
 
 ## Comando de referencia
 

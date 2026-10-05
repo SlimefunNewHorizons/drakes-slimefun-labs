@@ -10,7 +10,7 @@ This page translates the root [`README.md`](../../README.md) and the generated [
 - **CI-ready**: [`ci-monorepo-121.yml`](../../.github/workflows/ci-monorepo-121.yml) covers 100% of the inventory: `maven_full_reactor` + `gradle_green`.
 - **Local-only green**: kept as historical evidence from the `2026-04-24` cut, but it is no longer the primary status.
 - **In progress / Build-blocked**: no active compile blockers in the local cut; remaining risk moves to runtime smoke testing and release discipline.
-- Org board: [Project 1](https://github.com/orgs/DrakesCraft-Labs/projects/1) — keep aligned with the matrix ([`docs/PROJECT_BOARD_SYNC.md`](../PROJECT_BOARD_SYNC.md)).
+- Org board: [Project 1](https://github.com/orgs/SlimefunNewHorizons/projects/1) — keep aligned with the matrix ([`docs/PROJECT_BOARD_SYNC.md`](../PROJECT_BOARD_SYNC.md)).
 
 ## Recommended Order
 

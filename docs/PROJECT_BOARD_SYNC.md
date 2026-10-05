@@ -1,6 +1,6 @@
 # Sincronizar GitHub Projects con la matriz
 
-**Tablero:** [DrakesCraft-Labs / Project 1](https://github.com/orgs/DrakesCraft-Labs/projects/1)
+**Tablero:** [DrakesCraft-Labs / Project 1](https://github.com/orgs/SlimefunNewHorizons/projects/1)
 
 **Datos auditados:** [docs/es/PLUGIN_MATRIX.md](es/PLUGIN_MATRIX.md) (generado; no editar a mano). Regenerar README y matriz:
 

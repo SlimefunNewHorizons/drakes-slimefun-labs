@@ -22,7 +22,7 @@ Para evitar conflictos (Errores 422) con el registro de GitHub Packages, todos l
 ## 📈 Versiones y SNAPSHOTs
 Actualmente operamos en la **v7-SNAPSHOT**. 
 - **Escape de Corrupción**: Subimos a la v7 para limpiar metadatos corruptos de versiones anteriores en el registro.
-- **Despliegue Directo**: Cada Gate exitoso publica sus artefactos automáticamente en [GitHub Packages](https://github.com/orgs/DrakesCraft-Labs/packages).
+- **Despliegue Directo**: Cada Gate exitoso publica sus artefactos automáticamente en [GitHub Packages](https://github.com/orgs/SlimefunNewHorizons/packages).
 
 ## 🚀 Uso del CI
 ### Disparo Manual (Modo Silencioso)
@@ -47,7 +47,7 @@ Añade el repositorio de DrakesLab a tu `pom.xml`:
 <repositories>
     <repository>
         <id>github</id>
-        <url>https://maven.pkg.github.com/DrakesCraft-Labs/drakes-slimefun-labs</url>
+        <url>https://maven.pkg.github.com/SlimefunNewHorizons/drakes-slimefun-labs</url>
     </repository>
 </repositories>
 

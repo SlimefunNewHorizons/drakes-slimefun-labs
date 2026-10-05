@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   validate:
-    if: github.repository == 'DrakesCraft-Labs/drakes-slimefun-labs'
+    if: github.repository == 'SlimefunNewHorizons/drakes-slimefun-labs'
     name: Check for merge conflicts
     runs-on: ubuntu-latest
 

@@ -68,14 +68,14 @@ Para cada plugin importado desde sf5:
 
 Se inicio la separacion gradual de addons inestables a repos individuales dentro de `DrakesCraft-Labs`:
 
-- `https://github.com/DrakesCraft-Labs/SensibleToolbox-drake`
-- `https://github.com/DrakesCraft-Labs/Galactifun2-drake`
-- `https://github.com/DrakesCraft-Labs/DynaTech-drake`
-- `https://github.com/DrakesCraft-Labs/SlimeTinker-drake`
-- `https://github.com/DrakesCraft-Labs/ChestTerminal-drake`
-- `https://github.com/DrakesCraft-Labs/SaneCrafting-drake`
-- `https://github.com/DrakesCraft-Labs/MissileWarfare-drake`
-- `https://github.com/DrakesCraft-Labs/CrystamaeHistoria-drake`
+- `https://github.com/SlimefunNewHorizons/SensibleToolbox-drake`
+- `https://github.com/SlimefunNewHorizons/Galactifun2-drake`
+- `https://github.com/SlimefunNewHorizons/DynaTech-drake`
+- `https://github.com/SlimefunNewHorizons/SlimeTinker-drake`
+- `https://github.com/SlimefunNewHorizons/ChestTerminal-drake`
+- `https://github.com/SlimefunNewHorizons/SaneCrafting-drake`
+- `https://github.com/SlimefunNewHorizons/MissileWarfare-drake`
+- `https://github.com/SlimefunNewHorizons/CrystamaeHistoria-drake`
 
 Cada repo fue bootstrappeado con rama `1.21-latin` y README explicando objetivo/valor del addon para Slimefun y el stack Drake.
 

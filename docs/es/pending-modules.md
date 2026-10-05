@@ -12,7 +12,7 @@ Este documento refleja el estado **técnico** del monorepo tras la estabilizaci�
 
 - Tabla **por modulo** con estado (Listo CI / Listo local / En curso / Bloqueado) y observaciones: [`PLUGIN_MATRIX.md`](PLUGIN_MATRIX.md) (generada; ejecutar `python scripts/generate_plugin_matrix.py`).
 - Misma tabla incrustada en el [`README.md`](../../README.md) raiz.
-- Tablero de organizacion: [Project 1](https://github.com/orgs/DrakesCraft-Labs/projects/1) — ver [`PROJECT_BOARD_SYNC.md`](../PROJECT_BOARD_SYNC.md) para alinear tarjetas con la matriz.
+- Tablero de organizacion: [Project 1](https://github.com/orgs/SlimefunNewHorizons/projects/1) — ver [`PROJECT_BOARD_SYNC.md`](../PROJECT_BOARD_SYNC.md) para alinear tarjetas con la matriz.
 
 ## Estado actual
 

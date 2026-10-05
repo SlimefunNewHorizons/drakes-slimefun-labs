@@ -19,7 +19,7 @@ if (process.env.MODRINTH_DRAFT === 'true') {
   process.exit(0);
 }
 
-const cab = { Authorization: TOKEN, 'User-Agent': 'DrakesCraft-Labs/publicador' };
+const cab = { Authorization: TOKEN, 'User-Agent': 'SlimefunNewHorizons/publicador' };
 
 const actual = await fetch(`${V2}/project/${ID}`, { headers: cab });
 if (actual.status !== 200) {

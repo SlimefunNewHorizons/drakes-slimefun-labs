@@ -4,7 +4,7 @@ Guía operativa para mantener el repositorio **drakes-slimefun-labs** ordenado e
 
 ## Ramas largas (solo dos en el remoto)
 
-Política vigente: en **`DrakesCraft-Labs/drakes-slimefun-labs`** deben quedar **únicamente** las ramas **`main`** (estable Paper 1.21.x) y **`26.X-ToTheStars`** (experimento 26.x). Cualquier `feat/*`, `feature/*` u otra rama de trabajo debe **integrarse por PR y borrarse** al terminar.
+Política vigente: en **`SlimefunNewHorizons/drakes-slimefun-labs`** deben quedar **únicamente** las ramas **`main`** (estable Paper 1.21.x) y **`26.X-ToTheStars`** (experimento 26.x). Cualquier `feat/*`, `feature/*` u otra rama de trabajo debe **integrarse por PR y borrarse** al terminar.
 
 **Dependabot** crea ramas `dependabot/...` mientras haya PRs abiertos; cerrar o fusionar el PR (con borrado de rama) las elimina. Si reaparecen, es el ciclo normal de bumps.
 
@@ -17,7 +17,7 @@ GitHub **no** ofrece un botón “borrar todo el historial” de ejecuciones. Op
 1. **Retención automática** (recomendado): en el repo, *Settings → Actions → General → Artifact and log retention* (y políticas de la org). Reduce ruido sin scripts.
 2. **Borrar ejecuciones con la CLI** (por lotes): con token que incluya `workflow`:
   ```bash
-   gh run list --repo DrakesCraft-Labs/drakes-slimefun-labs --limit 200 --json databaseId -q '.[].databaseId' | xargs -n1 gh run delete --repo DrakesCraft-Labs/drakes-slimefun-labs
+   gh run list --repo SlimefunNewHorizons/drakes-slimefun-labs --limit 200 --json databaseId -q '.[].databaseId' | xargs -n1 gh run delete --repo SlimefunNewHorizons/drakes-slimefun-labs
   ```
    En Windows PowerShell puedes iterar con un bucle corto sobre `gh run list`. Respeta los límites de tasa de la API; pausa entre lotes si hay cientos de entradas.
 3. **Archivar el repo** o duplicar historial: medida extrema; no suele ser necesaria solo por “limpieza visual”.
@@ -26,7 +26,7 @@ No confundas borrar *runs* con borrar *logs de artifact*; son ajustes distintos 
 
 ## Pull requests
 
-1. `gh pr list --repo DrakesCraft-Labs/drakes-slimefun-labs --state open`
+1. `gh pr list --repo SlimefunNewHorizons/drakes-slimefun-labs --state open`
 2. Para cada PR: revisar CI, conflicto con `main`, y si el cambio sigue la política del monorepo.
 3. **Merge** cuando CI esté verde y el alcance sea claro; **cerrar** con comentario si está obsoleta o duplica trabajo ya integrado.
 
@@ -58,7 +58,7 @@ En este repo el workflow es `[.github/workflows/policy-no-cross-line-merge.yml](
 - **Solo lectura / comprobación** (oficial en CLI): `gh ruleset list`, `gh ruleset view`, `gh ruleset check <rama> -R org/repo`.
 - **Crear o actualizar rulesets** no trae subcomando dedicado; se hace con la **API REST** que `gh` puede llamar:
   ```bash
-  gh api --method POST repos/DrakesCraft-Labs/drakes-slimefun-labs/rulesets --input ruleset.json
+  gh api --method POST repos/SlimefunNewHorizons/drakes-slimefun-labs/rulesets --input ruleset.json
   ```
   El cuerpo `ruleset.json` debe seguir [Create a repository ruleset](https://docs.github.com/en/rest/repos/rules?apiVersion=2022-11-28#create-a-repository-ruleset) (campos `name`, `target`, `enforcement`, `conditions.ref_name.include`, `rules` con `type: "required_status_checks"` y el `context` exacto del check). Hace falta token con permisos de administración sobre el repo.
 - **Branch protection clásica** (alternativa): `PUT /repos/{owner}/{repo}/branches/{branch}/protection` con `required_status_checks`; también vía `gh api` con JSON bien formado. Suele ser más verboso que un ruleset en la UI.
@@ -81,7 +81,7 @@ Solo bloquea cuando la **cabeza del PR** es exactamente `26.X-ToTheStars` o `1.2
 Alertas Dependabot abiertas:
 
 ```bash
-gh api "repos/DrakesCraft-Labs/drakes-slimefun-labs/dependabot/alerts?state=open&per_page=100" --jq 'length'
+gh api "repos/SlimefunNewHorizons/drakes-slimefun-labs/dependabot/alerts?state=open&per_page=100" --jq 'length'
 ```
 
 Resumen de alertas de dependencias (incluye histórico *fixed* / *dismissed*):

@@ -1,4 +1,4 @@
-# Publica SNAPSHOTs del núcleo en GitHub Packages (maven.pkg.github.com/DrakesCraft-Labs/drakes-slimefun-labs).
+# Publica SNAPSHOTs del núcleo en GitHub Packages (maven.pkg.github.com/SlimefunNewHorizons/drakes-slimefun-labs).
 # Manual: Actions → "Publish Maven (GitHub Packages)" → Run workflow.
 name: Publish Maven (GitHub Packages)
 

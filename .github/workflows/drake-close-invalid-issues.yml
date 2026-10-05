@@ -35,6 +35,6 @@ jobs:
         issue_number: ${{ github.event.issue.number }}
         body: |-
            Your issue seems to be missing our template.
-           [Click here to create a bug report](https://github.com/DrakesCraft-Labs/drakes-slimefun-labs/issues/new/choose)
+           [Click here to create a bug report](https://github.com/SlimefunNewHorizons/drakes-slimefun-labs/issues/new/choose)
 
            Please remember that this Bug Tracker is exclusively reserved for Bug reports.

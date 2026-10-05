@@ -36,7 +36,7 @@ def transform(text: str) -> str:
             name_replaced = True
             continue
 
-        line = line.replace("Slimefun5/Slimefun5", "DrakesCraft-Labs/drakes-slimefun-labs")
+        line = line.replace("Slimefun5/Slimefun5", "SlimefunNewHorizons/drakes-slimefun-labs")
         line = line.replace("- stable", "- 1.21-latin")
         line = line.replace("- experimental", "- 1.21-latin")
         out.append(line)

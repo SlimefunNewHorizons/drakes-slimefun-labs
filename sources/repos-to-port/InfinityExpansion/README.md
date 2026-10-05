@@ -50,7 +50,7 @@ Este addon es compatible con el **Reactor Unificado** de DrakesCraft-Labs.
 ## 🤝 Créditos y Autoría
 - **Autor Original**: [Mooy1](https://github.com/Mooy1)
 - **Mantenedor**: [Sefiraat](https://github.com/Sefiraat)
-- **Fork Drake / 1.21.1:** [DrakesCraft-Labs](https://github.com/DrakesCraft-Labs)
+- **Fork Drake / 1.21.1:** [DrakesCraft-Labs](https://github.com/SlimefunNewHorizons)
 
 ---
 *Powered by DrakesCraft-Labs - 2026*

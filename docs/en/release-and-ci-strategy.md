@@ -2,7 +2,7 @@
 
 ## Current policy
 
-Per-module readiness is tracked in the generated root [`README.md`](../../README.md) and [`docs/es/PLUGIN_MATRIX.md`](../es/PLUGIN_MATRIX.md) (`python scripts/generate_plugin_matrix.py`). Keep the org [Project 1](https://github.com/orgs/DrakesCraft-Labs/projects/1) aligned using [`docs/PROJECT_BOARD_SYNC.md`](../PROJECT_BOARD_SYNC.md).
+Per-module readiness is tracked in the generated root [`README.md`](../../README.md) and [`docs/es/PLUGIN_MATRIX.md`](../es/PLUGIN_MATRIX.md) (`python scripts/generate_plugin_matrix.py`). Keep the org [Project 1](https://github.com/orgs/SlimefunNewHorizons/projects/1) aligned using [`docs/PROJECT_BOARD_SYNC.md`](../PROJECT_BOARD_SYNC.md).
 
 The repository is operated in an incremental-stability model:
 
@@ -31,7 +31,7 @@ Concurrency cancels in-progress runs on the same branch to reduce “war zone”
 
 The **Release monorepo JARs** workflow (`.github/workflows/release-monorepo-jars.yml`, see [github-maintenance.md](../github-maintenance.md)) builds `mvn package`, runs `scripts/release/collect_monorepo_jars.py`, and publishes **one `.jar` asset per Maven module** plus `manifest.json`. That is a **lab distribution** for selective downloads—not a claim that every addon is equally gameplay-ready.
 
-Addons that depend on **`drakes-labs-autoupdate`** call `DrakesLabsReleaseUpdate.schedule(...)` and compare the running jar to **`releases/latest`** of `DrakesCraft-Labs/drakes-slimefun-labs`, then download **only their matching asset** into the server **`updates/`** folder (unless disabled). Operational notes: [docs/wiki/runtime-drakes-autoupdate.md](../wiki/runtime-drakes-autoupdate.md). Mass injection helper: `scripts/inject_drakes_autoupdate.py` (see [scripts/README.md](../../scripts/README.md)).
+Addons that depend on **`drakes-labs-autoupdate`** call `DrakesLabsReleaseUpdate.schedule(...)` and compare the running jar to **`releases/latest`** of `SlimefunNewHorizons/drakes-slimefun-labs`, then download **only their matching asset** into the server **`updates/`** folder (unless disabled). Operational notes: [docs/wiki/runtime-drakes-autoupdate.md](../wiki/runtime-drakes-autoupdate.md). Mass injection helper: `scripts/inject_drakes_autoupdate.py` (see [scripts/README.md](../../scripts/README.md)).
 
 ## Next milestones
 

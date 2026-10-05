@@ -17,7 +17,7 @@ if (!TOKEN) {
   process.exit(1);
 }
 
-const cabeceras = { Authorization: TOKEN, 'User-Agent': 'DrakesCraft-Labs/publicador' };
+const cabeceras = { Authorization: TOKEN, 'User-Agent': 'SlimefunNewHorizons/publicador' };
 
 async function pedir(url, opciones = {}) {
   const r = await fetch(url, { ...opciones, headers: { ...cabeceras, ...(opciones.headers || {}) } });
@@ -76,8 +76,8 @@ if (!proyecto) {
     project_type: 'mod',
     is_draft: true,
     license_id: process.env.PROJECT_LICENSE || 'GPL-3.0-only',
-    source_url: `https://github.com/DrakesCraft-Labs/${SLUG}`,
-    issues_url: `https://github.com/DrakesCraft-Labs/${SLUG}/issues`,
+    source_url: `https://github.com/SlimefunNewHorizons/${SLUG}`,
+    issues_url: `https://github.com/SlimefunNewHorizons/${SLUG}/issues`,
     discord_url: 'https://discord.gg/rR7FbfCt9Y',
     initial_versions: [],
   };
@@ -117,8 +117,8 @@ console.log(`Proyecto en uso: ${proyecto.slug} (${proyecto.id})`);
 // --- Declaraciones de Contenido & Metadatos (Sección 5.9 y 4) -----------------------------
 try {
   const patchData = {
-    source_url: `https://github.com/DrakesCraft-Labs/${SLUG}`,
-    issues_url: `https://github.com/DrakesCraft-Labs/${SLUG}/issues`,
+    source_url: `https://github.com/SlimefunNewHorizons/${SLUG}`,
+    issues_url: `https://github.com/SlimefunNewHorizons/${SLUG}/issues`,
     discord_url: 'https://discord.gg/rR7FbfCt9Y'
   };
   await fetch(`${V2}/project/${proyecto.id}`, {

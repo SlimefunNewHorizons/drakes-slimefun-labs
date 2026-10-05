@@ -10,7 +10,7 @@ Esta página traduce el inventario del [`README.md`](../../README.md) y la [`PLU
 - **Listo (CI)**: [`ci-monorepo-121.yml`](../../.github/workflows/ci-monorepo-121.yml) cubre el 100% del inventario: `maven_full_reactor` + `gradle_green`.
 - **Listo (local)**: queda como evidencia historica del corte `2026-04-24`, pero ya no es el estado principal.
 - **En curso / Bloqueado**: sin bloqueos de compilacion activos en el corte local; el riesgo pendiente se mueve a CI ampliado y runtime smoke.
-- Tablero org: [Project 1](https://github.com/orgs/DrakesCraft-Labs/projects/1) — mantener alineado con la matriz ([`PROJECT_BOARD_SYNC.md`](../PROJECT_BOARD_SYNC.md)).
+- Tablero org: [Project 1](https://github.com/orgs/SlimefunNewHorizons/projects/1) — mantener alineado con la matriz ([`PROJECT_BOARD_SYNC.md`](../PROJECT_BOARD_SYNC.md)).
 
 ## 🛡️ Fortificación y Seguridad (Especial 2026)
 

@@ -16,7 +16,7 @@ if (FORZAR_DRAFT) {
 const cabeceras = {
   Authorization: TOKEN,
   'Content-Type': 'application/json',
-  'User-Agent': 'DrakesCraft-Labs/publicador'
+  'User-Agent': 'SlimefunNewHorizons/publicador'
 };
 
 try {

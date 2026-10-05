@@ -23,4 +23,4 @@
 
 ## Org board
 
-[DrakesCraft-Labs / Project 1](https://github.com/orgs/DrakesCraft-Labs/projects/1) — align with the matrix using [PROJECT_BOARD_SYNC.md](../PROJECT_BOARD_SYNC.md).
+[DrakesCraft-Labs / Project 1](https://github.com/orgs/SlimefunNewHorizons/projects/1) — align with the matrix using [PROJECT_BOARD_SYNC.md](../PROJECT_BOARD_SYNC.md).

@@ -13,7 +13,7 @@ if (!TOKEN) {
   process.exit(1);
 }
 
-const cabeceras = { Authorization: TOKEN, 'User-Agent': 'DrakesCraft-Labs/publicador' };
+const cabeceras = { Authorization: TOKEN, 'User-Agent': 'SlimefunNewHorizons/publicador' };
 
 async function pedir(url, opciones = {}) {
   const r = await fetch(url, { ...opciones, headers: { ...cabeceras, ...(opciones.headers || {}) } });

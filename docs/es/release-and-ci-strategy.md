@@ -8,7 +8,7 @@ Definir una política clara para publicación de artefactos y automatización en
 
 Este repositorio es un `reactor Maven` grande y curado por etapas.
 
-El inventario por modulo (listo CI, listo local, en curso, bloqueado) esta en el [`README.md`](../../README.md) y en [`PLUGIN_MATRIX.md`](PLUGIN_MATRIX.md), generados por `scripts/generate_plugin_matrix.py`. El [Project 1 de la org](https://github.com/orgs/DrakesCraft-Labs/projects/1) debe reflejar esos mismos estados ([`PROJECT_BOARD_SYNC.md`](../PROJECT_BOARD_SYNC.md)).
+El inventario por modulo (listo CI, listo local, en curso, bloqueado) esta en el [`README.md`](../../README.md) y en [`PLUGIN_MATRIX.md`](PLUGIN_MATRIX.md), generados por `scripts/generate_plugin_matrix.py`. El [Project 1 de la org](https://github.com/orgs/SlimefunNewHorizons/projects/1) debe reflejar esos mismos estados ([`PROJECT_BOARD_SYNC.md`](../PROJECT_BOARD_SYNC.md)).
 
 Eso implica que:
 
@@ -74,7 +74,7 @@ El corte local `2026-04-24` probo `mvn -B -DskipTests compile -fae` sobre los m�
 
 ## Auto-updater y releases
 
-Los addons que declaran `drakes-labs-autoupdate` consultan el **último** release del repo `DrakesCraft-Labs/drakes-slimefun-labs` y, si el asset `.jar` es más nuevo que la versión en ejecución, copian **solo ese jar** a la carpeta `updates/` del servidor (salvo desactivación por JVM/env). Detalle operativo y despliegue manual en **`docs/wiki/runtime-drakes-autoupdate.md`**. Inyección masiva del hook: `scripts/inject_drakes_autoupdate.py` (ver `scripts/README.md`).
+Los addons que declaran `drakes-labs-autoupdate` consultan el **último** release del repo `SlimefunNewHorizons/drakes-slimefun-labs` y, si el asset `.jar` es más nuevo que la versión en ejecución, copian **solo ese jar** a la carpeta `updates/` del servidor (salvo desactivación por JVM/env). Detalle operativo y despliegue manual en **`docs/wiki/runtime-drakes-autoupdate.md`**. Inyección masiva del hook: `scripts/inject_drakes_autoupdate.py` (ver `scripts/README.md`).
 
 ## Política de releases
 

@@ -4,7 +4,7 @@
 
 - **What this repo is:** a **Maven + Gradle** monorepo (**Java 21**), **one source tree**, not a single plugin. It contains **Slimefun 4 (Drake fork)**, **dough-core**, internal patches, and **dozens of addons** under `sources/` (Maven) plus **Gradle** projects (Galactifun, Bump, …) from `settings.gradle.kts`.
 - **Stable 1.21.x branch:** **`main`** (la rama `1.21-latin` quedó obsoleta). Compile baseline: **Paper 1.21.1-R0.1-SNAPSHOT** in the root `pom.xml`; smoke targets **Paper 1.21.1** and **1.21.11** depending on profile (`scripts/smoke/smoke-profiles.json`).
-- **Networks:** código en [NetworksV6-drake](https://github.com/DrakesCraft-Labs/NetworksV6-drake) rama **`main`**; el monorepo solo referencia el artefacto Maven.
+- **Networks:** código en [NetworksV6-drake](https://github.com/SlimefunNewHorizons/NetworksV6-drake) rama **`main`**; el monorepo solo referencia el artefacto Maven.
 - **Experimental 26.x branch:** **`26.X-ToTheStars`** — work toward **Paper API 26.x** (Maven profile `paper-26-preview`). Do not land large 26.x refactors on `main` PRs without maintainer agreement. **Cadence:** the team may budget roughly **one month** before resuming 26.x at sprint pace (the 1.21.x push was extremely heavy); meanwhile priority is **keep `main` green**, Issues, and smoke when needed.
 - **Real-world validation:** **[DrakesCraft](https://drakescraft.cl)** (Chile; typical joins `play.drakescraft.cl` / `mc.drakescraft.cl`). Per-addon polish: **community**, **Chagui**, GitHub **Issues**.
 
@@ -16,7 +16,7 @@
 4. **Shaded Slimefun:** after Slimefun `package`, Dough lives under `com.github.drakescraft_labs.slimefun4.libraries.dough.protection.*`. Addons using `Slimefun.getProtectionManager()` must align imports with the **relocated** types on the addon classpath. Helper: `python scripts/fix_dough_compilation_imports.py` (excludes core modules).
 5. **Smoke:** `scripts/smoke/` (`run-smoke-server.ps1`, `smoke_orchestrate.py`); **ProtocolLib** via Python script + PowerShell fallback. Profiles include `*-paper-12111` for Paper 1.21.11.
 6. **Releases:** manual workflow **Release monorepo JARs** uploads **each plugin `.jar`** as assets on one GitHub Release — see `docs/github-maintenance.md`.
-7. If module **status** vs the org board changes, refresh the matrix and align [Project 1](https://github.com/orgs/DrakesCraft-Labs/projects/1) per `docs/PROJECT_BOARD_SYNC.md`.
+7. If module **status** vs the org board changes, refresh the matrix and align [Project 1](https://github.com/orgs/SlimefunNewHorizons/projects/1) per `docs/PROJECT_BOARD_SYNC.md`.
 
 ## Reference command
 

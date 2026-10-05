@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
 
     ## Only run this on the main repo
-    if: github.event.pull_request.head.repo.full_name == 'DrakesCraft-Labs/drakes-slimefun-labs'
+    if: github.event.pull_request.head.repo.full_name == 'SlimefunNewHorizons/drakes-slimefun-labs'
 
     steps:
       - name: Auto squash
@@ -38,7 +38,7 @@ jobs:
     runs-on: ubuntu-latest
 
     ## Only run this on the main repo
-    if: github.event.pull_request.head.repo.full_name == 'DrakesCraft-Labs/drakes-slimefun-labs'
+    if: github.event.pull_request.head.repo.full_name == 'SlimefunNewHorizons/drakes-slimefun-labs'
 
     steps:
       - name: Auto squash

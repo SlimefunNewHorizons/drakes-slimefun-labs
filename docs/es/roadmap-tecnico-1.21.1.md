@@ -1,5 +1,5 @@
 # ROADMAP: Refactorización Masiva Slimefun (1.20.6 -> 1.21.11)
-**Proyecto:** DrakesLab | **Branch:** `1.21-latin` | **Responsable técnico:** [DrakesCraft-Labs](https://github.com/DrakesCraft-Labs)
+**Proyecto:** DrakesLab | **Branch:** `1.21-latin` | **Responsable técnico:** [DrakesCraft-Labs](https://github.com/SlimefunNewHorizons)
 
 Este documento detalla la estrategia de ingeniería para portar más de 35 addons de Slimefun a Minecraft 1.21.11, enfocándose en la transición de NBT (PersistentDataContainer) a Data Components mediante una abstracción total y la consolidación del repositorio en un modelo Maven Multi-módulo.
 

@@ -2,7 +2,7 @@ name: ExoticGarden
 version: ${project.version}
 author: TheBusyBiscuit
 description: A Slimefun Addon that adds new Plants and dishes to the game
-website: https://github.com/DrakesCraft-Labs/drakes-slimefun-labs
+website: https://github.com/SlimefunNewHorizons/drakes-slimefun-labs
 
 api-version: '1.13'
 main: com.github.drakescraft_labs.exoticgarden.ExoticGarden

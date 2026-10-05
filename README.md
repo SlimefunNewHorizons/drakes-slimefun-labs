@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://raw.githubusercontent.com/DrakesCraft-Labs/drakes-slimefun-labs/main/labs_addons_banner.svg" alt="Drakes Slimefun Labs" width="920" />
+  <img src="https://raw.githubusercontent.com/SlimefunNewHorizons/drakes-slimefun-labs/main/labs_addons_banner.svg" alt="Drakes Slimefun Labs" width="920" />
 
 # Drakes Slimefun Labs — Legacy Archive
 
@@ -11,7 +11,7 @@
 ## Current model
 
 Each migrated addon lives in its own repository under
-[DrakesCraft Labs](https://github.com/DrakesCraft-Labs). Each standalone repository owns:
+[DrakesCraft Labs](https://github.com/SlimefunNewHorizons). Each standalone repository owns:
 
 - its Maven/Gradle project version;
 - its dependencies and Java 21 toolchain;
@@ -51,13 +51,13 @@ does not deploy plugins, modify player data, or restart DrakesCraft.
 ---
 
 Maintained by [JackStar6677-1](https://github.com/JackStar6677-1) and
-[DrakesCraft Labs](https://github.com/DrakesCraft-Labs).
+[DrakesCraft Labs](https://github.com/SlimefunNewHorizons).
 
 ---
 
 ## 📄 License & Upstream Attribution
 
-This project is a sovereign fork maintained by [**JackStar6677-1**](https://github.com/JackStar6677-1) under [**DrakesCraft Labs**](https://github.com/DrakesCraft-Labs).
+This project is a sovereign fork maintained by [**JackStar6677-1**](https://github.com/JackStar6677-1) under [**DrakesCraft Labs**](https://github.com/SlimefunNewHorizons).
 
 - **Original Project:** Created by the upstream authors and the open-source community.
 - **DrakesCraft Optimizations:** Modernized for Paper/Purpur 1.21.11+, Java 21, high concurrency, asynchronous safety, and exploit/duplication prevention.

@@ -11,7 +11,7 @@ Fuente de verdad para **DrakesCraft Slimefun Foundry** en la rama **`main`**: **
 | **Release** opcional: muchos `.jar` en un solo GitHub Release ([workflow](../.github/workflows/release-monorepo-jars.yml)) | Pasta fina **addon por addon** (Chagui, comunidad, staff) |
 | Matriz y tablas generadas | **[DrakesCraft](https://drakescraft.cl)** (Chile) como servidor de referencia del pack |
 
-La linea **Paper 26.x** se trabaja en la rama **[`26.X-ToTheStars`](https://github.com/DrakesCraft-Labs/drakes-slimefun-labs/tree/26.X-ToTheStars)**; no sustituye a `main` hasta que ese porte este listo.
+La linea **Paper 26.x** se trabaja en la rama **[`26.X-ToTheStars`](https://github.com/SlimefunNewHorizons/drakes-slimefun-labs/tree/26.X-ToTheStars)**; no sustituye a `main` hasta que ese porte este listo.
 
 ## Wiki del laboratorio
 

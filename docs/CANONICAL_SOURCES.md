@@ -46,7 +46,7 @@ Maven and Gradle projects intentionally include zero addon modules.
 
 All repository names in this table resolve below:
 
-`https://github.com/DrakesCraft-Labs/<repository>`
+`https://github.com/SlimefunNewHorizons/<repository>`
 
 ## Remaining archive inventory
 

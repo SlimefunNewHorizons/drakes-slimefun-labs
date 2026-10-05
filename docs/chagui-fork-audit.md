@@ -3,7 +3,7 @@
 Fecha: 2026-05-20
 
 Fuente auditada: `Chagui68/Slimefun6-Drakes-Fusion`, rama `Mixted`.
-Base nueva: `main` en `DrakesCraft-Labs/drakes-slimefun-labs`.
+Base nueva: `main` en `SlimefunNewHorizons/drakes-slimefun-labs`.
 
 ## Decision de ramas
 

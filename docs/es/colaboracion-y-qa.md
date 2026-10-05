@@ -1,6 +1,6 @@
 # Colaboración, roles y campo de pruebas (acuerdo de equipo)
 
-Resumen de lo acordado entre **Pablo** y **Chagui** (abril 2026) para que quede en el repo y en GitHub, alineado con la [documentación central](../README.md) y la [wiki del proyecto](https://github.com/DrakesCraft-Labs/drakes-slimefun-labs/wiki) cuando exista.
+Resumen de lo acordado entre **Pablo** y **Chagui** (abril 2026) para que quede en el repo y en GitHub, alineado con la [documentación central](../README.md) y la [wiki del proyecto](https://github.com/SlimefunNewHorizons/drakes-slimefun-labs/wiki) cuando exista.
 
 ## Contexto
 

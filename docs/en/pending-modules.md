@@ -12,7 +12,7 @@ This document tracks the **technical** monorepo state after CI stabilization. It
 
 - Per-module status (CI-ready / local-only / in progress / build-blocked, currently 0 blocked in the local cut) and notes: [`docs/es/PLUGIN_MATRIX.md`](../es/PLUGIN_MATRIX.md) (generated; run `python scripts/generate_plugin_matrix.py`).
 - The same table is embedded in the root [`README.md`](../../README.md).
-- Org board: [DrakesCraft-Labs / Project 1](https://github.com/orgs/DrakesCraft-Labs/projects/1) — see [`docs/PROJECT_BOARD_SYNC.md`](../PROJECT_BOARD_SYNC.md) to align cards with the matrix.
+- Org board: [DrakesCraft-Labs / Project 1](https://github.com/orgs/SlimefunNewHorizons/projects/1) — see [`docs/PROJECT_BOARD_SYNC.md`](../PROJECT_BOARD_SYNC.md) to align cards with the matrix.
 
 ## Current state
 

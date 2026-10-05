@@ -4,7 +4,7 @@ main: com.github.drakescraft_labs.drakeslabpresence.DrakesLabPresencePlugin
 api-version: "1.21"
 authors: [DrakesCraft-Labs]
 description: Optional HTTPS webhooks — presence heartbeat + configurable game events toward Discord or your relay. Opt-in; no bot tokens in JAR.
-website: https://github.com/DrakesCraft-Labs/drakes-slimefun-labs
+website: https://github.com/SlimefunNewHorizons/drakes-slimefun-labs
 softdepend: [Slimefun]
 
 commands:

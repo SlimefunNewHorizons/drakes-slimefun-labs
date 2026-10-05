@@ -4,7 +4,7 @@ Muchos addons del monorepo dependen de **`drakes-labs-autoupdate`** y llaman a `
 
 ## Qué hace
 
-1. Consulta **`GET /repos/DrakesCraft-Labs/drakes-slimefun-labs/releases/latest`**.
+1. Consulta **`GET /repos/SlimefunNewHorizons/drakes-slimefun-labs/releases/latest`**.
 2. Busca un **asset `.jar`** cuyo nombre coincida con el `mavenArtifactId` (o el nombre del plugin) del addon en ejecución.
 3. Si la versión inferida del asset es **mayor** que la del plugin cargado, descarga **solo ese JAR** a la carpeta **`updates/`** de Bukkit/Paper (la que devuelve `getUpdateFolder()`; por defecto suele ser `updates/` junto al `server.jar`).
 
