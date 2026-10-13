@@ -413,38 +413,39 @@ public final class IEStorageCache {
     }
 
     private void withdraw(Player p, int withdraw) {
-        if (this.material.getMaxStackSize() == 64) {
-            ItemStack remaining = p.getInventory().addItem(createItem(withdraw)).values().toArray(new ItemStack[]{})[0];
-            if (remaining != null) {
-                if (remaining.getAmount() != withdraw) {
-                    this.amount += remaining.getAmount() - withdraw;
-                }
-            } else {
-                this.amount -= withdraw;
-            }
+        if (withdraw <= 0 || this.material == null) {
             return;
         }
-
+        // addItem solo devuelve lo que NO cupo (mapa vacio si todo entro): se descuenta
+        // del cofre unicamente lo que realmente entro al inventario.
         Inventory inv = p.getInventory();
+        int max = Math.max(1, this.material.getMaxStackSize());
         int toWithdraw = withdraw;
-        do {
-            int amt = Math.min(this.material.getMaxStackSize(), toWithdraw);
-            ItemStack remaining = inv.addItem(createItem(amt)).values().toArray(new ItemStack[]{})[0];
-            if (remaining != null) {
-                toWithdraw -= amt - remaining.getAmount();
+        int delivered = 0;
+        while (toWithdraw > 0) {
+            int amt = Math.min(max, toWithdraw);
+            int leftover = leftoverAmount(inv.addItem(createItem(amt)));
+            delivered += amt - leftover;
+            toWithdraw -= amt;
+            if (leftover > 0) {
                 break;
-            } else {
-                toWithdraw -= amt;
             }
         }
-        while (toWithdraw > 0);
-        if (toWithdraw != withdraw) {
-            this.amount += toWithdraw - withdraw;
+        this.amount = Math.max(0, this.amount - delivered);
+    }
+
+    private static int leftoverAmount(java.util.Map<Integer, ItemStack> leftovers) {
+        int total = 0;
+        for (ItemStack left : leftovers.values()) {
+            if (left != null) {
+                total += left.getAmount();
+            }
         }
+        return total;
     }
 
     private void withdrawLast(Player p) {
-        if (p.getInventory().addItem(createItem(1)).values().toArray(new ItemStack[]{})[0] == null) {
+        if (leftoverAmount(p.getInventory().addItem(createItem(1))) == 0) {
             setEmpty();
         }
     }
