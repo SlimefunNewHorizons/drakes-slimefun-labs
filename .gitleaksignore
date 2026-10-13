@@ -1,0 +1,21 @@
+# Hallazgos de gitleaks revisados (2026-10-14): ejemplos de documentacion de fuentes de terceros vendidas (AUTHENTICATION.md, .env.example, guias), no credenciales.
+5d7655c70322fd4f2c4707e5128dd07e76d562dc:sources/repos-to-port/kinetic-core/README.md:generic-api-key:350
+5d7655c70322fd4f2c4707e5128dd07e76d562dc:sources/repos-to-port/kinetic-core/TEST_PLAN_METADATA.md:private-key:31
+5d7655c70322fd4f2c4707e5128dd07e76d562dc:sources/repos-to-port/kinetic-core/config/.env.example:generic-api-key:16
+5d7655c70322fd4f2c4707e5128dd07e76d562dc:sources/repos-to-port/kinetic-core/config/.env.example:generic-api-key:19
+5d7655c70322fd4f2c4707e5128dd07e76d562dc:sources/repos-to-port/kinetic-core/docs/SALESFORCE_SETUP_GUIDE.md:generic-api-key:323
+5d7655c70322fd4f2c4707e5128dd07e76d562dc:sources/repos-to-port/kinetic-core/docs/api/AUTHENTICATION.md:generic-api-key:282
+5d7655c70322fd4f2c4707e5128dd07e76d562dc:sources/repos-to-port/kinetic-core/docs/api/AUTHENTICATION.md:generic-api-key:285
+5d7655c70322fd4f2c4707e5128dd07e76d562dc:sources/repos-to-port/kinetic-core/docs/api/AUTHENTICATION.md:generic-api-key:313
+5d7655c70322fd4f2c4707e5128dd07e76d562dc:sources/repos-to-port/kinetic-core/docs/api/AUTHENTICATION.md:private-key:112
+5d7655c70322fd4f2c4707e5128dd07e76d562dc:sources/repos-to-port/kinetic-core/docs/index.md:generic-api-key:309
+954f41021b856dd3fe8dc4437161ab8bc6bd1957:sources/repos-to-port/kinetic-core/README.md:generic-api-key:350
+954f41021b856dd3fe8dc4437161ab8bc6bd1957:sources/repos-to-port/kinetic-core/TEST_PLAN_METADATA.md:private-key:31
+954f41021b856dd3fe8dc4437161ab8bc6bd1957:sources/repos-to-port/kinetic-core/config/.env.example:generic-api-key:16
+954f41021b856dd3fe8dc4437161ab8bc6bd1957:sources/repos-to-port/kinetic-core/config/.env.example:generic-api-key:19
+954f41021b856dd3fe8dc4437161ab8bc6bd1957:sources/repos-to-port/kinetic-core/docs/SALESFORCE_SETUP_GUIDE.md:generic-api-key:323
+954f41021b856dd3fe8dc4437161ab8bc6bd1957:sources/repos-to-port/kinetic-core/docs/api/AUTHENTICATION.md:generic-api-key:282
+954f41021b856dd3fe8dc4437161ab8bc6bd1957:sources/repos-to-port/kinetic-core/docs/api/AUTHENTICATION.md:generic-api-key:285
+954f41021b856dd3fe8dc4437161ab8bc6bd1957:sources/repos-to-port/kinetic-core/docs/api/AUTHENTICATION.md:generic-api-key:313
+954f41021b856dd3fe8dc4437161ab8bc6bd1957:sources/repos-to-port/kinetic-core/docs/api/AUTHENTICATION.md:private-key:112
+954f41021b856dd3fe8dc4437161ab8bc6bd1957:sources/repos-to-port/kinetic-core/docs/index.md:generic-api-key:309
