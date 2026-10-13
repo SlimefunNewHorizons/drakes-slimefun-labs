@@ -1,0 +1,29 @@
+# Verificacion y seguridad (llama a los workflows reutilizables de la org). No edites la logica aqui:
+# se cambia UNA vez en https://github.com/SlimefunNewHorizons/.github y se propaga a todos los repos.
+name: Seguridad y CI de la org
+
+on:
+  push:
+    branches: [main]
+    paths: ['src/**', 'pom.xml', 'build.gradle*', 'gradle/**', '.github/workflows/ci.yml']
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 4 * * 1'   # CodeQL y gitleaks semanales
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  verificar:
+    uses: SlimefunNewHorizons/.github/.github/workflows/verificar.yml@main
+  seguridad:
+    permissions:
+      contents: read
+      security-events: write
+      pull-requests: write
+    uses: SlimefunNewHorizons/.github/.github/workflows/seguridad.yml@main

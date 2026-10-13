@@ -1,0 +1,30 @@
+# Release en GitHub (jar + SHA-256 + notas de core) tras verificar. NO publica en Modrinth (este repo ya tiene su flujo propio).
+# Logica en https://github.com/SlimefunNewHorizons/.github (workflow publicar.yml).
+name: Release de la org
+
+on:
+  push:
+    branches: [main]
+    paths: ['src/**', 'pom.xml', 'build.gradle*']
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Verificar y preparar todo pero NO publicar'
+        type: boolean
+        default: true
+
+concurrency:
+  group: org-release-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    permissions:
+      contents: write
+    uses: SlimefunNewHorizons/.github/.github/workflows/publicar.yml@main
+    with:
+      dry_run: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
+      modrinth: false
