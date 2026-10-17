@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "generated": "2026-08-30",
+  "generated": "2026-10-18",
   "monorepo": "SlimefunNewHorizons/drakes-slimefun-labs",
   "status": "legacy",
   "sourceModules": 84,
-  "migratedModules": 32,
-  "pendingModules": 52,
+  "migratedModules": 44,
+  "pendingModules": 40,
   "policy": "Standalone repositories are canonical. Every unlisted archived source module remains migration-pending and read-only until extracted, independently built, and registered here.",
   "migrated": [
     {
@@ -135,6 +135,54 @@
     {
       "archivedPath": "sources/community-addons/SlimeFrame",
       "repository": "https://github.com/SlimefunNewHorizons/SlimeFrame-drake"
+    },
+    {
+      "archivedPath": "sources/batch-2-expansion/Cultivation_Updated",
+      "repository": "https://github.com/DrakesCraft-Labs/Cultivation"
+    },
+    {
+      "archivedPath": "sources/community-addons/FastMachines",
+      "repository": "https://github.com/SlimefunNewHorizons/FastMachines-drake"
+    },
+    {
+      "archivedPath": "sources/batch-2-expansion/Networks-Experimental",
+      "repository": "https://github.com/SlimefunNewHorizons/NetworksV6-drake"
+    },
+    {
+      "archivedPath": "sources/batch-2-expansion/Networks_Better_Compatibility",
+      "repository": "https://github.com/DrakesCraft-Labs/Networks---Better-Compatibility-Unofficial-"
+    },
+    {
+      "archivedPath": "sources/community-addons/CustomItemGenerators",
+      "repository": "https://github.com/SlimefunNewHorizons/CustomItemGenerators-drake"
+    },
+    {
+      "archivedPath": "sources/community-addons/SlimefunTranslation",
+      "repository": "https://github.com/SlimefunNewHorizons/SlimefunTranslation-drake"
+    },
+    {
+      "archivedPath": "sources/community-addons/UltimateGenerators2",
+      "repository": "https://github.com/SlimefunNewHorizons/UltimateGenerators2-drake"
+    },
+    {
+      "archivedPath": "sources/repos-to-port/luckyblocks-sf",
+      "repository": "https://github.com/DrakesCraft-Labs/luckyblocks-sf-drake"
+    },
+    {
+      "archivedPath": "sources/repos-to-port/ChestTerminal-sf5",
+      "repository": "https://github.com/DrakesCraft-Labs/ChestTerminal-drake"
+    },
+    {
+      "archivedPath": "sources/repos-to-port/Galactifun-sf5",
+      "repository": "https://github.com/DrakesCraft-Labs/Galactifun2-drake"
+    },
+    {
+      "archivedPath": "sources/upstream-sf5/SensibleToolbox",
+      "repository": "https://github.com/DrakesCraft-Labs/SensibleToolbox-drake"
+    },
+    {
+      "archivedPath": "PortTextura",
+      "repository": "https://github.com/SlimefunNewHorizons/Slimefun-Texture-Drake"
     }
   ]
 }

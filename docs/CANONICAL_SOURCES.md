@@ -43,14 +43,24 @@ Maven and Gradle projects intentionally include zero addon modules.
 | SlimeHUD | SlimeHUD-drake |
 | SmallSpace | SmallSpace-drake |
 | WorldEditSlimefun | WorldEditSlimefun-drake |
+| Cultivation | Cultivation |
+| FastMachines | FastMachines-drake |
+| Networks-Experimental | NetworksV6-drake |
+| Networks_Better_Compatibility | Networks---Better-Compatibility-Unofficial- |
+| CustomItemGenerators | CustomItemGenerators-drake |
+| SlimefunTranslation | SlimefunTranslation-drake |
+| UltimateGenerators2 | UltimateGenerators2-drake |
+| LuckyBlocks | luckyblocks-sf-drake |
+| ChestTerminal | ChestTerminal-drake |
+| Galactifun | Galactifun2-drake |
+| SensibleToolbox | SensibleToolbox-drake |
+| PortTextura | Slimefun-Texture-Drake |
 
-All repository names in this table resolve below:
-
-`https://github.com/SlimefunNewHorizons/<repository>`
+All repository names in this table resolve under `DrakesCraft-Labs` or `SlimefunNewHorizons` on GitHub.
 
 ## Remaining archive inventory
 
-There are **52 source modules still awaiting deliberate extraction**. They are
+There are **40 source modules still awaiting deliberate extraction**. They are
 recorded as `pending` in [migration/addons.json](../migration/addons.json),
 instead of being presented as already migrated. A pending module must receive:
 
