@@ -82,4 +82,99 @@ public final class Validate {
     public static <T extends Iterable<?>> T noNullElements(T iterable, String message, Object... values) {
         return org.apache.commons.lang3.Validate.noNullElements(iterable, message, values);
     }
+
+    public static void notEmpty(Object[] array) {
+        if (array == null || array.length == 0) {
+            throw new IllegalArgumentException("The validated array is empty");
+        }
+    }
+
+    public static void notEmpty(Collection<?> collection) {
+        if (collection == null || collection.isEmpty()) {
+            throw new IllegalArgumentException("The validated collection is empty");
+        }
+    }
+
+    public static void notEmpty(Map<?, ?> map) {
+        if (map == null || map.isEmpty()) {
+            throw new IllegalArgumentException("The validated map is empty");
+        }
+    }
+
+    public static void notEmpty(String string) {
+        if (string == null || string.isEmpty()) {
+            throw new IllegalArgumentException("The validated string is empty");
+        }
+    }
+
+    public static void notEmpty(Object[] array, String message) {
+        if (array == null || array.length == 0) {
+            throw new IllegalArgumentException(message);
+        }
+    }
+
+    public static void notEmpty(Collection<?> collection, String message) {
+        if (collection == null || collection.isEmpty()) {
+            throw new IllegalArgumentException(message);
+        }
+    }
+
+    public static void notEmpty(Map<?, ?> map, String message) {
+        if (map == null || map.isEmpty()) {
+            throw new IllegalArgumentException(message);
+        }
+    }
+
+    public static void notEmpty(String string, String message) {
+        if (string == null || string.isEmpty()) {
+            throw new IllegalArgumentException(message);
+        }
+    }
+
+    public static void noNullElements(Object[] array) {
+        if (array == null) {
+            throw new IllegalArgumentException("The validated array is null");
+        }
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == null) {
+                throw new IllegalArgumentException("The validated array contains null element at index: " + i);
+            }
+        }
+    }
+
+    public static void noNullElements(Collection<?> collection) {
+        if (collection == null) {
+            throw new IllegalArgumentException("The validated collection is null");
+        }
+        int i = 0;
+        for (Object obj : collection) {
+            if (obj == null) {
+                throw new IllegalArgumentException("The validated collection contains null element at index: " + i);
+            }
+            i++;
+        }
+    }
+
+    public static void noNullElements(Object[] array, String message) {
+        if (array == null) {
+            throw new IllegalArgumentException(message);
+        }
+        for (Object obj : array) {
+            if (obj == null) {
+                throw new IllegalArgumentException(message);
+            }
+        }
+    }
+
+    public static void noNullElements(Collection<?> collection, String message) {
+        if (collection == null) {
+            throw new IllegalArgumentException(message);
+        }
+        for (Object obj : collection) {
+            if (obj == null) {
+                throw new IllegalArgumentException(message);
+            }
+        }
+    }
+
 }
