@@ -29,7 +29,7 @@ import dev.drake.dough.common.DoughLogger;
  * Represents a player skin.
  * Refactored to remove MoJang AuthLib dependencies and use modern GSON.
  * 
- * @author DrakesCraft-Labs
+ * @author SlimefunNewHorizons
  */
 public class PlayerSkin {
 

@@ -21,7 +21,7 @@ Base nueva: `main` en `SlimefunNewHorizons/drakes-slimefun-labs`.
 ## Normalizado
 
 - `Networks_Better_Compatibility` produce `NetworksV6-Drake-v11-SNAPSHOT.jar`, alineado con el jar activo del servidor.
-- `plugin.yml` de Networks apunta a la organizacion `DrakesCraft-Labs` y declara autores completos.
+- `plugin.yml` de Networks apunta a la organizacion `SlimefunNewHorizons` y declara autores completos.
 - `Networks-Experimental` queda como `NetworksExperimental-Drake`, para evitar colision de nombre/comando con el plugin de produccion durante auditorias.
 
 ## No integrado por ahora

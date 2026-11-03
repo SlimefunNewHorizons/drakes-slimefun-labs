@@ -1,6 +1,6 @@
 # Final Script to populate the GitHub Project
 $projectNumber = 1
-$owner = "DrakesCraft-Labs"
+$owner = "SlimefunNewHorizons"
 $projectId = "PVT_kwDOD6G3h84BVfiK"
 
 # Field IDs

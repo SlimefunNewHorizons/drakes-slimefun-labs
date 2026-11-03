@@ -6,7 +6,7 @@ Updated: 2026-08-30
 
 This monorepo is a legacy source archive. No migrated addon version, build,
 release, or production fix is canonical here. Work only in the standalone
-repository under the DrakesCraft-Labs organization.
+repository under the SlimefunNewHorizons organization.
 
 The retained directories under `sources/` preserve history and are not deleted
 because they remain useful for archaeology and regression comparison. The root
@@ -56,7 +56,7 @@ Maven and Gradle projects intentionally include zero addon modules.
 | SensibleToolbox | SensibleToolbox-drake |
 | PortTextura | Slimefun-Texture-Drake |
 
-All repository names in this table resolve under `DrakesCraft-Labs` or `SlimefunNewHorizons` on GitHub.
+All repository names in this table resolve under `SlimefunNewHorizons` or `SlimefunNewHorizons` on GitHub.
 
 ## Remaining archive inventory
 

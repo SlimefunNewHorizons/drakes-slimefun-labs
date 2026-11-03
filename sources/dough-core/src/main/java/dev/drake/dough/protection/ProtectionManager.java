@@ -25,7 +25,7 @@ import dev.drake.dough.protection.modules.WorldGuardProtectionModule;
  * [Minimalist version for 1.21.1 Migration]
  * 
  * @author TheBusyBiscuit
- * @author DrakesCraft-Labs (Purge)
+ * @author SlimefunNewHorizons (Purge)
  */
 public final class ProtectionManager {
 

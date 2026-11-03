@@ -1,6 +1,6 @@
 # Script to populate the GitHub Project with pending modules (v2)
 $projectNumber = 1
-$owner = "DrakesCraft-Labs"
+$owner = "SlimefunNewHorizons"
 
 # IDs for fields and options
 $migrationStageField = "PVTSSF_lADOD6G3h84BVfiKzhQ7HQA"

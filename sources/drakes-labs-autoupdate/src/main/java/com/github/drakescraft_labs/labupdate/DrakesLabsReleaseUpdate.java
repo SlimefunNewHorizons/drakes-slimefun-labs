@@ -30,7 +30,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 /**
- * Comprueba el último release de {@code DrakesCraft-Labs/drakes-slimefun-labs} y, si hay un asset
+ * Comprueba el último release de {@code SlimefunNewHorizons/drakes-slimefun-labs} y, si hay un asset
  * más nuevo que la versión en ejecución, deja <strong>un único</strong> JAR del addon en
  * {@code updates/} (Paper/Bukkit).
  * <p>
@@ -45,7 +45,7 @@ import com.google.gson.JsonParser;
  */
 public final class DrakesLabsReleaseUpdate {
 
-    private static final String DEFAULT_REPO = "DrakesCraft-Labs/drakes-slimefun-labs";
+    private static final String DEFAULT_REPO = "SlimefunNewHorizons/drakes-slimefun-labs";
     private static final String USER_AGENT = "DrakesLabs-AutoUpdate/1.2";
     private static final String MONOREPO_ZIP_NAME = "monorepo-plugins.zip";
     private static final String MONOREPO_ENTRY_PREFIX = "monorepo-jars/";

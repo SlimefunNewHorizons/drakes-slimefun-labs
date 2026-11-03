@@ -17,7 +17,7 @@ import org.bukkit.inventory.meta.SkullMeta;
  * Utility class for player heads.
  * Refactored to use native Paper Profile API (NMS-free).
  * 
- * @author DrakesCraft-Labs
+ * @author SlimefunNewHorizons
  */
 public final class PlayerHead {
 

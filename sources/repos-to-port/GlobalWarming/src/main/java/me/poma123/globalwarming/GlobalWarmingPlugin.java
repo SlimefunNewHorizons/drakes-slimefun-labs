@@ -265,7 +265,7 @@ implements SlimefunAddon {
     }
 
     public String getBugTrackerURL() {
-        return "https://github.com/DrakesCraft-Labs/GlobalWarming/issues";
+        return "https://github.com/SlimefunNewHorizons/GlobalWarming/issues";
     }
 
     public JavaPlugin getJavaPlugin() {

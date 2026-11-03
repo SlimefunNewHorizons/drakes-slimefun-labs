@@ -35,7 +35,7 @@ public class GeneticChickengineering extends AbstractAddon {
     private boolean debugEnabled = false;
 
     public GeneticChickengineering() {
-        super("DrakesCraft-Labs", "GeneticChickengineering-Reborn-drake", "main", "options.auto-update");
+        super("SlimefunNewHorizons", "GeneticChickengineering-Reborn-drake", "main", "options.auto-update");
     }
 
     @Nonnull

@@ -66,7 +66,7 @@ Para cada plugin importado desde sf5:
 
 ## Repos standalone creados en la organizacion (2026-04-28)
 
-Se inicio la separacion gradual de addons inestables a repos individuales dentro de `DrakesCraft-Labs`:
+Se inicio la separacion gradual de addons inestables a repos individuales dentro de `SlimefunNewHorizons`:
 
 - `https://github.com/SlimefunNewHorizons/SensibleToolbox-drake`
 - `https://github.com/SlimefunNewHorizons/Galactifun2-drake`

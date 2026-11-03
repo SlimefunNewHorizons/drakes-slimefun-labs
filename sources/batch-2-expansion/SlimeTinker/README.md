@@ -33,7 +33,7 @@ Crea herramientas y armaduras únicas combinando metales de Slimefun Core y otro
 ---
 
 ## 🚀 Instalación
-Este addon es compatible con el **Reactor Unificado** de DrakesCraft-Labs.
+Este addon es compatible con el **Reactor Unificado** de SlimefunNewHorizons.
 
 1. Instala el [Slimefun 6 Core](../../slimefun-core/Slimefun4-src) (árbol `sources/slimefun-core` de este monorepo).
 2. Descarga el JAR de SlimeTinker desde Releases.
@@ -43,11 +43,11 @@ Este addon es compatible con el **Reactor Unificado** de DrakesCraft-Labs.
 
 ## 🤝 Créditos y Autoría
 - **Autor Original**: [Sefiraat](https://github.com/Sefiraat)
-- **Fork Drake:** [DrakesCraft-Labs](https://github.com/SlimefunNewHorizons)
+- **Fork Drake:** [SlimefunNewHorizons](https://github.com/SlimefunNewHorizons)
 - **Agradecimientos Especiales**: Riley (InfinityLib), Martin, Boomer, GentlemanCheesy.
 
 ---
-*Powered by DrakesCraft-Labs - 2026*
+*Powered by SlimefunNewHorizons - 2026*
 
 <!-- DRAKES-STATUS:BEGIN -->
 > Estado de sincronizacion: **2026-04-24**.

@@ -17,7 +17,7 @@ import org.bukkit.inventory.meta.ItemMeta;
  * This is used heavily in Slimefun and its addons.
  * 
  * @author TheBusyBiscuit
- * @author DrakesCraft-Labs (1.21.1 Port)
+ * @author SlimefunNewHorizons (1.21.1 Port)
  */
 public class CustomItemStack extends ItemStack {
 

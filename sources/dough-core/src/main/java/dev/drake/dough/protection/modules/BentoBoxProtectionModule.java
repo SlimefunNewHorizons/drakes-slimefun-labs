@@ -20,7 +20,7 @@ import dev.drake.dough.protection.ProtectionModule;
  * Robust reflection-based BentoBox protection module for SkyBlock and OneBlock.
  * Ensures Slimefun machines, containers, and blocks cannot be accessed without island permissions.
  *
- * @author DrakesCraft-Labs
+ * @author SlimefunNewHorizons
  */
 public class BentoBoxProtectionModule implements ProtectionModule {
 

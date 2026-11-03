@@ -15,7 +15,7 @@ import com.destroystokyo.paper.profile.ProfileProperty;
  * A wrapper for player textures that uses the native Paper Profile API.
  * This replaces the legacy NMS/AuthLib implementation.
  * 
- * @author DrakesCraft-Labs
+ * @author SlimefunNewHorizons
  */
 public final class CustomGameProfile {
 

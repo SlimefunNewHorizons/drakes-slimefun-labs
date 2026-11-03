@@ -3,7 +3,7 @@
 Bloque de **contexto corto** útil al abrir una sesión de trabajo o para notas internas del equipo.
 
 ```text
-Repo: DrakesCraft-Labs / drakes-slimefun-labs
+Repo: SlimefunNewHorizons / drakes-slimefun-labs
 Rama estable: 1.21-latin (Paper 1.21.x API, Java 21). NO es un solo plugin: monorepo Maven+Gradle (~86 módulos).
 Rama experimental 26.x: 26.X-ToTheStars (perfil Maven paper-26-preview). No mezclar con 1.21 sin acuerdo explícito del equipo.
 Prioridad habitual: mantener 1.21-latin + Issues + servidor de referencia DrakesCraft; ventana de ~1 mes de estabilización antes de empujar 26.x a ritmo de sprint fuerte.

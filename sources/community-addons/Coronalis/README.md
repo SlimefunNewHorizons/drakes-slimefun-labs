@@ -106,7 +106,7 @@ flowchart LR
 | Dependencia | Versión |
 |-------------|---------|
 | **Paper** | 1.21.1 |
-| **Slimefun 6** (fork Drake / DrakesCraft-Labs) | 11.x |
+| **Slimefun 6** (fork Drake / SlimefunNewHorizons) | 11.x |
 | **Java** | 21 |
 
 En servidores Drake, el JAR se publica como **`Coronalis-drake`** vía autoupdate del monorepo.
@@ -157,9 +157,9 @@ mvn -DskipTests package
 
 Salida: `target/Coronalis.jar`
 
-> Necesitas acceso al repositorio Maven de **DrakesCraft-Labs** (`slimefun-core`, `dough-core`, `drakes-labs-autoupdate`). Configura `GITHUB_TOKEN` o credenciales en `settings.xml` si Maven falla al resolver dependencias.
+> Necesitas acceso al repositorio Maven de **SlimefunNewHorizons** (`slimefun-core`, `dough-core`, `drakes-labs-autoupdate`). Configura `GITHUB_TOKEN` o credenciales en `settings.xml` si Maven falla al resolver dependencias.
 
-### Monorepo DrakesCraft-Labs
+### Monorepo SlimefunNewHorizons
 
 ```powershell
 mvn -pl sources/community-addons/Coronalis -am -DskipTests package

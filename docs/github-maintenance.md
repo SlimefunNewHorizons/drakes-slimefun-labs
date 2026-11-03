@@ -87,7 +87,7 @@ gh api "repos/SlimefunNewHorizons/drakes-slimefun-labs/dependabot/alerts?state=o
 Resumen de alertas de dependencias (incluye histórico *fixed* / *dismissed*):
 
 ```bash
-gh api graphql -f query='query($o:String!,$n:String!){repository(owner:$o,name:$n){vulnerabilityAlerts(first:50){nodes{state securityAdvisory{summary severity}}}}}' -f o=DrakesCraft-Labs -f n=drakes-slimefun-labs
+gh api graphql -f query='query($o:String!,$n:String!){repository(owner:$o,name:$n){vulnerabilityAlerts(first:50){nodes{state securityAdvisory{summary severity}}}}}' -f o=SlimefunNewHorizons -f n=drakes-slimefun-labs
 ```
 
 ### Cómo mitiga este monorepo

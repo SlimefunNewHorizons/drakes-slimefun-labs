@@ -11,5 +11,5 @@
 
     <name>NetworksV6-drake</name>
     <description>Descriptor local para permitir que escaneos Maven resuelvan la API de Networks instalada desde release verificada en CI.</description>
-    <url>https://github.com/DrakesCraft-Labs/NetworksV6-drake</url>
+    <url>https://github.com/SlimefunNewHorizons/NetworksV6-drake</url>
 </project>

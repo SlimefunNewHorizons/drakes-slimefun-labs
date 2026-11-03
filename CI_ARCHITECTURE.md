@@ -62,7 +62,7 @@ Añade el repositorio de DrakesLab a tu `pom.xml`:
 ```
 
 ---
-*Documentación de CI del laboratorio DrakesCraft-Labs.*
+*Documentación de CI del laboratorio SlimefunNewHorizons.*
 
 <!-- DRAKES-STATUS:BEGIN -->
 > Estado de sincronizacion: **2026-04-24**.

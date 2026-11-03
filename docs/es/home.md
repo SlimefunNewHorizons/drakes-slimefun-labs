@@ -24,4 +24,4 @@
 
 ## Tablero de la organización
 
-[DrakesCraft-Labs / Project 1](https://github.com/orgs/SlimefunNewHorizons/projects/1) — sincronización descrita en [PROJECT_BOARD_SYNC.md](../PROJECT_BOARD_SYNC.md).
+[SlimefunNewHorizons / Project 1](https://github.com/orgs/SlimefunNewHorizons/projects/1) — sincronización descrita en [PROJECT_BOARD_SYNC.md](../PROJECT_BOARD_SYNC.md).

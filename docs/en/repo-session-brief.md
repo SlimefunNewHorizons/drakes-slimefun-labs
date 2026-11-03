@@ -3,7 +3,7 @@
 **Short context** block for a new work session or internal team notes.
 
 ```text
-Repo: DrakesCraft-Labs / drakes-slimefun-labs
+Repo: SlimefunNewHorizons / drakes-slimefun-labs
 Stable branch: main (Paper 1.21.x API, Java 21). NOT a single plugin: Maven+Gradle monorepo (~86 modules).
 Networks addon: standalone repo SlimefunNewHorizons/NetworksV6-drake on main (1.21-latin obsoleto).
 Experimental 26.x: 26.X-ToTheStars (Maven profile paper-26-preview). Do not mix into 1.21 without explicit maintainer agreement.
