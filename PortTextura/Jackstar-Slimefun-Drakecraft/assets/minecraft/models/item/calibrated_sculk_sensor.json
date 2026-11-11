@@ -1,1 +1,1 @@
-﻿{"parent":"minecraft:block/calibrated_sculk_sensor","overrides":[{"predicate":{"custom_model_data":3009004},"model":"minecraft:slimefun/coronalis/auto_calibrator"}]}
+{"parent":"minecraft:block/calibrated_sculk_sensor","overrides":[{"predicate":{"custom_model_data":3009004},"model":"minecraft:slimefun/coronalis/auto_calibrator"}]}

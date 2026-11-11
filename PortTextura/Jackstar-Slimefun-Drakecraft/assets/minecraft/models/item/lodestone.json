@@ -1,1 +1,1 @@
-﻿{"parent":"minecraft:block/lodestone","overrides":[{"predicate":{"custom_model_data":3009001},"model":"minecraft:slimefun/coronalis/signal_core"},{"predicate":{"custom_model_data":3009005},"model":"minecraft:slimefun/coronalis/foundation_anchor"}]}
+{"parent":"minecraft:block/lodestone","overrides":[{"predicate":{"custom_model_data":3009001},"model":"minecraft:slimefun/coronalis/signal_core"},{"predicate":{"custom_model_data":3009005},"model":"minecraft:slimefun/coronalis/foundation_anchor"}]}

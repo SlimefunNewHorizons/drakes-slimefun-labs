@@ -1,1 +1,1 @@
-﻿{"parent":"minecraft:block/chiseled_bookshelf","overrides":[{"predicate":{"custom_model_data":3009003},"model":"minecraft:slimefun/coronalis/data_bank"}]}
+{"parent":"minecraft:block/chiseled_bookshelf","overrides":[{"predicate":{"custom_model_data":3009003},"model":"minecraft:slimefun/coronalis/data_bank"}]}

@@ -1,1 +1,1 @@
-﻿{"parent":"minecraft:item/generated","textures":{"layer0":"minecraft:item/chain"},"overrides":[{"predicate":{"custom_model_data":3009000},"model":"minecraft:slimefun/coronalis/coaxial_cable"}]}
+{"parent":"minecraft:item/generated","textures":{"layer0":"minecraft:item/chain"},"overrides":[{"predicate":{"custom_model_data":3009000},"model":"minecraft:slimefun/coronalis/coaxial_cable"}]}

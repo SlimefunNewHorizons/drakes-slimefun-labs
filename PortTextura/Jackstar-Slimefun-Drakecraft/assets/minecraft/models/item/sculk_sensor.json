@@ -1,1 +1,1 @@
-﻿{"parent":"minecraft:block/sculk_sensor","overrides":[{"predicate":{"custom_model_data":3009002},"model":"minecraft:slimefun/coronalis/signal_amplifier"},{"predicate":{"custom_model_data":3009010},"model":"minecraft:slimefun/coronalis/signal_repeater"}]}
+{"parent":"minecraft:block/sculk_sensor","overrides":[{"predicate":{"custom_model_data":3009002},"model":"minecraft:slimefun/coronalis/signal_amplifier"},{"predicate":{"custom_model_data":3009010},"model":"minecraft:slimefun/coronalis/signal_repeater"}]}

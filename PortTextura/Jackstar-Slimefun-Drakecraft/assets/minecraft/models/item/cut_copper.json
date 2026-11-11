@@ -1,1 +1,1 @@
-﻿{"parent":"minecraft:block/cut_copper","overrides":[{"predicate":{"custom_model_data":3009006},"model":"minecraft:slimefun/coronalis/tower_segment"}]}
+{"parent":"minecraft:block/cut_copper","overrides":[{"predicate":{"custom_model_data":3009006},"model":"minecraft:slimefun/coronalis/tower_segment"}]}
