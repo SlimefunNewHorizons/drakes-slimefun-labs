@@ -3,9 +3,9 @@ package com.epicplayera10.potionexpansion.multiblocks.alchemic;
 import com.epicplayera10.potionexpansion.PotionExpansion;
 
 import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
+import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
 import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
 import com.github.drakescraft_labs.slimefun4.core.multiblocks.MultiBlockMachine;
-import com.github.drakescraft_labs.slimefun4.implementation.Slimefun;
 import com.github.drakescraft_labs.slimefun4.libraries.dough.items.ItemUtils;
 import io.papermc.lib.PaperLib;
 import com.github.drakescraft_labs.slimefun4.utils.SlimefunUtils;
@@ -22,20 +22,26 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.PotionMeta;
+import org.bukkit.potion.PotionType;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class AlchemicStation extends MultiBlockMachine {
-    private List<AlchemicRecipe> recipes = new ArrayList<>();
-    private final int INGREDIENT_SLOT = 1;
-    private final int POTION_1_SLOT = 6;
-    private final int POTION_2_SLOT = 7;
-    private final int POTION_3_SLOT = 8;
+    static final int INGREDIENT_SLOT = 1;
+    static final int CENTER_INGREDIENT_SLOT = 4;
+    private static final int[] INGREDIENT_SLOTS = {INGREDIENT_SLOT, CENTER_INGREDIENT_SLOT};
+    private static final int[] POTION_SLOTS = {6, 7, 8, 3, 4, 5, 0, 1, 2};
+    private static final int MAX_POTIONS_PER_BREW = 3;
+
+    private final List<AlchemicRecipe> alchemicRecipes = new ArrayList<>();
+
+    record MatchedRecipe(AlchemicRecipe recipe, int ingredientSlot) {}
 
     @ParametersAreNonnullByDefault
     public AlchemicStation(ItemGroup itemGroup, SlimefunItemStack item) {
@@ -45,48 +51,65 @@ public class AlchemicStation extends MultiBlockMachine {
     }
 
     @Override
+    public void addRecipe(ItemStack[] input, ItemStack output) {
+        super.addRecipe(input, output);
+        if (input != null && output != null) {
+            AlchemicRecipe parsed = AlchemicRecipe.from(Arrays.asList(input), output);
+            if (parsed != null) {
+                alchemicRecipes.add(parsed);
+            }
+        }
+    }
+
+    @Override
     public void onInteract(Player player, Block block) {
         Block dispBlock = block.getRelative(BlockFace.DOWN);
         BlockState state = PaperLib.getBlockState(dispBlock, false).getState();
 
-        if (state instanceof Dispenser) {
-            Dispenser disp = (Dispenser) state;
+        if (state instanceof Dispenser disp) {
             Inventory inv = disp.getInventory();
 
             List<Block> glassBlocks = getWhiteGlassBlocks(block);
 
-            AlchemicRecipe recipe = checkRecipe(inv);
+            MatchedRecipe matched = checkRecipe(inv);
 
-            if (recipe != null) {
+            if (matched != null) {
+                AlchemicRecipe recipe = matched.recipe();
                 // En Laboratorio (modo creativo/prueba) se permite preparar sin research previa:
                 // los testers como StoneAgeKing pueden probar pociones sin trabar la investigacion.
                 boolean creativeBypass = player.getGameMode() == org.bukkit.GameMode.CREATIVE;
                 if (creativeBypass || SlimefunUtils.canPlayerUseItem(player, recipe.getOutput(), true)) {
-                    ItemUtils.consumeItem(inv.getItem(INGREDIENT_SLOT), true);
+                    ItemUtils.consumeItem(inv.getItem(matched.ingredientSlot()), true);
                     startAnimation(recipe, inv, block, glassBlocks);
                 } else {
                     player.sendMessage("§cDebes investigar esta pocion en la guia de Slimefun antes de prepararla.");
                 }
             } else {
-                player.sendMessage("§cReceta no valida: pon el polvo de Potion Expansion en el slot central y 3 pociones §emundanas o de agua§c en el dispensador. Investiga la pocion en §e/sf§c primero.");
+                player.sendMessage("§cReceta no valida: pon el polvo de Potion Expansion en el slot superior central (o centro) y de 1 a 3 pociones §emundanas o de agua§c en la fila inferior del dispensador. Investiga la pocion en §e/sf§c primero.");
             }
         }
     }
 
     public List<AlchemicRecipe> getAlchemicRecipes() {
-        return recipes;
+        return alchemicRecipes;
     }
 
     @Nullable
-    private AlchemicRecipe checkRecipe(@Nonnull Inventory input) {
-        ItemStack ingredient = input.getItem(INGREDIENT_SLOT);
+    MatchedRecipe checkRecipe(@Nonnull Inventory input) {
+        return matchRecipe(alchemicRecipes, input);
+    }
 
-        if (ingredient != null) {
-            for (AlchemicRecipe recipe : recipes) {
-                if (SlimefunUtils.isItemSimilar(ingredient, recipe.getIngredient(), true)) {
-                    if (anyValidInputPotion(recipe, input)) {
-                        return recipe;
-                    }
+    @Nullable
+    static MatchedRecipe matchRecipe(@Nonnull List<AlchemicRecipe> candidateRecipes, @Nonnull Inventory input) {
+        for (int slot : INGREDIENT_SLOTS) {
+            ItemStack ingredient = input.getItem(slot);
+            if (ingredient == null) {
+                continue;
+            }
+            for (AlchemicRecipe recipe : candidateRecipes) {
+                if (SlimefunUtils.isItemSimilar(ingredient, recipe.getIngredient(), true)
+                        && anyValidInputPotion(recipe, input, slot)) {
+                    return new MatchedRecipe(recipe, slot);
                 }
             }
         }
@@ -126,12 +149,12 @@ public class AlchemicStation extends MultiBlockMachine {
                         world.playEffect(glassBlock.getLocation().clone().add(0.5, 0, 0.5), Effect.SMOKE, BlockFace.UP);
                     });
                 } else {
-                    if (anyValidInputPotion(recipe, dispInv)) {
+                    if (anyValidInputPotion(recipe, dispInv, -1)) {
                         world.playSound(b.getLocation(), Sound.BLOCK_BREWING_STAND_BREW, 1f, 0.1f);
                         brew(recipe, dispInv);
                     } else {
                         world.playSound(b.getLocation(), Sound.ENTITY_ZOMBIE_VILLAGER_HURT, 1f, 0.5f);
-                        world.dropItemNaturally(b.getLocation(), recipe.getIngredient());
+                        world.dropItemNaturally(b.getLocation(), recipe.getIngredient().clone());
                     }
                 }
             }, i * 20L);
@@ -139,45 +162,73 @@ public class AlchemicStation extends MultiBlockMachine {
     }
 
     @ParametersAreNonnullByDefault
-    private void brew(AlchemicRecipe recipe, Inventory dispInv) {
-        for (int i = POTION_1_SLOT; i < POTION_3_SLOT + 1; i++) {
-            if (isInputPotionValid(recipe, dispInv.getItem(i))) {
-                dispInv.setItem(i, recipe.getOutput());
+    static void brew(AlchemicRecipe recipe, Inventory dispInv) {
+        int brewed = 0;
+        for (int slot : POTION_SLOTS) {
+            if (brewed >= MAX_POTIONS_PER_BREW) {
+                break;
+            }
+            if (isInputPotionValid(recipe, dispInv.getItem(slot))) {
+                dispInv.setItem(slot, recipe.getOutput().clone());
+                brewed++;
             }
         }
     }
 
     @ParametersAreNonnullByDefault
-    private boolean anyValidInputPotion(AlchemicRecipe recipe, Inventory dispInv) {
-        for (int i = POTION_1_SLOT; i < POTION_3_SLOT + 1; i++) {
-            if (isInputPotionValid(recipe, dispInv.getItem(i))) {
+    static boolean anyValidInputPotion(AlchemicRecipe recipe, Inventory dispInv, int skipSlot) {
+        for (int slot : POTION_SLOTS) {
+            if (slot == skipSlot) {
+                continue;
+            }
+            if (isInputPotionValid(recipe, dispInv.getItem(slot))) {
                 return true;
             }
         }
         return false;
     }
 
-    private boolean isInputPotionValid(@Nonnull AlchemicRecipe recipe, @Nullable ItemStack item) {
-        if (item != null && item.getType() == Material.POTION && item.hasItemMeta()) {
-            PotionMeta meta = (PotionMeta) item.getItemMeta();
-            return sameBase(meta.getBasePotionType(), recipe.getInputPotion());
+    static boolean isInputPotionValid(@Nonnull AlchemicRecipe recipe, @Nullable ItemStack item) {
+        if (item == null || item.getType() != Material.POTION) {
+            return false;
         }
-        return false;
+        if (isCustomSlimefunItem(item)) {
+            return false;
+        }
+        PotionType actualBase = null;
+        if (item.hasItemMeta()) {
+            if (!(item.getItemMeta() instanceof PotionMeta meta)) {
+                return false;
+            }
+            if (meta.hasCustomEffects()) {
+                return false;
+            }
+            actualBase = meta.getBasePotionType();
+        }
+        return sameBase(actualBase, recipe.getInputPotion());
+    }
+
+    private static boolean isCustomSlimefunItem(@Nonnull ItemStack item) {
+        try {
+            return SlimefunItem.getByItem(item) != null;
+        } catch (Throwable ignored) {
+            // In unit tests without a running Slimefun registry, treat mocked items as vanilla
+            return false;
+        }
     }
 
     /**
-     * Compara la base de dos pociones tratando WATER y MUNDANE como equivalentes.
-     * Los jugadores usan botella de agua o pocion mundana indistintamente como base
-     * "vacia"; exigir MUNDANE exacto provocaba el falso "receta no valida".
+     * Compara la base de dos pociones tratando WATER, MUNDANE y pocion vacia (sin base ni efectos)
+     * como equivalentes cuando la receta espera una base vacia.
      */
-    private static boolean sameBase(@Nullable org.bukkit.potion.PotionType a, @Nullable org.bukkit.potion.PotionType b) {
-        if (a == b) {
-            return true;
+    static boolean sameBase(@Nullable PotionType actual, @Nullable PotionType expected) {
+        if (expected == null || isBlankBase(expected)) {
+            return actual == null || isBlankBase(actual);
         }
-        return isBlankBase(a) && isBlankBase(b);
+        return actual == expected;
     }
 
-    private static boolean isBlankBase(@Nullable org.bukkit.potion.PotionType t) {
-        return t == org.bukkit.potion.PotionType.WATER || t == org.bukkit.potion.PotionType.MUNDANE;
+    static boolean isBlankBase(@Nullable PotionType t) {
+        return t == PotionType.WATER || t == PotionType.MUNDANE;
     }
 }

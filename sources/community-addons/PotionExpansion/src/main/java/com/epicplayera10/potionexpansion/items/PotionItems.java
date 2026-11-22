@@ -16,7 +16,6 @@ import com.github.drakescraft_labs.slimefun4.utils.compatibility.VersionedEnchan
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.PotionMeta;
-import org.bukkit.potion.PotionData;
 import org.bukkit.potion.PotionType;
 
 import java.util.Arrays;
