@@ -2,9 +2,9 @@ package com.epicplayera10.potionexpansion;
 
 import com.epicplayera10.potionexpansion.items.PotionItems;
 
-import com.github.drakescraft_labs.slimefun4.api.researches.Research;
-import com.github.drakescraft_labs.slimefun4.api.MinecraftVersion;
-import com.github.drakescraft_labs.slimefun4.implementation.Slimefun;
+import io.github.thebusybiscuit.slimefun4.api.researches.Research;
+import io.github.thebusybiscuit.slimefun4.api.MinecraftVersion;
+import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import org.bukkit.NamespacedKey;
 
 import javax.annotation.Nonnull;

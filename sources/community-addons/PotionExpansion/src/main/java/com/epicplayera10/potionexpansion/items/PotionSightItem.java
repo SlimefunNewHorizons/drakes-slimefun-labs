@@ -5,11 +5,11 @@ import com.epicplayera10.potionexpansion.api.effects.PotionSightEffect;
 import com.epicplayera10.potionexpansion.api.effects.PotionSightType;
 import com.epicplayera10.potionexpansion.api.effects.EffectsManager;
 
-import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
-import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
-import com.github.drakescraft_labs.slimefun4.core.handlers.ItemConsumptionHandler;
+import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun4.core.handlers.ItemConsumptionHandler;
 
 import org.bukkit.inventory.ItemStack;
 

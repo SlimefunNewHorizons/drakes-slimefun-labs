@@ -15,6 +15,7 @@
     <version>1.0.0</version>
 
     <properties>
+        <slimefun.drake.version>11.0-Universal-26.x-SNAPSHOT</slimefun.drake.version>
         <maven.deploy.skip>false</maven.deploy.skip>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>

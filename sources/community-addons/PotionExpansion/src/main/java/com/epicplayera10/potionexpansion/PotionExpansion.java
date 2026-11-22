@@ -7,8 +7,8 @@ import com.epicplayera10.potionexpansion.commands.PotionExpansionTab;
 import com.epicplayera10.potionexpansion.listeners.DrinkMilkListener;
 import com.epicplayera10.potionexpansion.tasks.EffectsTask;
 
-import com.github.drakescraft_labs.slimefun4.libraries.dough.config.Config;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.updater.GitHubBuildsUpdater;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.GitHubBuildsUpdater;
 
 import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
@@ -16,7 +16,7 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitTask;
 
-import com.github.drakescraft_labs.slimefun4.api.SlimefunAddon;
+import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;

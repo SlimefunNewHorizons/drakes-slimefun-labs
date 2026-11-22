@@ -2,13 +2,13 @@ package com.epicplayera10.potionexpansion.multiblocks.alchemic;
 
 import com.epicplayera10.potionexpansion.PotionExpansion;
 
-import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
-import com.github.drakescraft_labs.slimefun4.core.multiblocks.MultiBlockMachine;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.items.ItemUtils;
+import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.core.multiblocks.MultiBlockMachine;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.ItemUtils;
 import io.papermc.lib.PaperLib;
-import com.github.drakescraft_labs.slimefun4.utils.SlimefunUtils;
+import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
 
 import org.bukkit.Effect;
 import org.bukkit.Material;

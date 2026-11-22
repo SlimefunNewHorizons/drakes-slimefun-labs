@@ -1,7 +1,7 @@
 package com.epicplayera10.potionexpansion.items;
 
 import com.epicplayera10.potionexpansion.PotionExpansion;
-import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import org.bukkit.NamespacedKey;
 
 public class PotionRecipeType {

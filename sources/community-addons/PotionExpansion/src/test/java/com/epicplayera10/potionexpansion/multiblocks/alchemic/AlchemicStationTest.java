@@ -1,7 +1,7 @@
 package com.epicplayera10.potionexpansion.multiblocks.alchemic;
 
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
-import com.github.drakescraft_labs.slimefun4.utils.SlimefunUtils;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
 
 import org.bukkit.Material;
 import org.bukkit.inventory.Inventory;

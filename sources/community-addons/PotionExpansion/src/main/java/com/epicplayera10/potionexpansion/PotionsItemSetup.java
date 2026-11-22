@@ -6,11 +6,11 @@ import com.epicplayera10.potionexpansion.api.effects.PotionSightType;
 import com.epicplayera10.potionexpansion.items.PotionSightItem;
 import com.epicplayera10.potionexpansion.multiblocks.alchemic.AlchemicStation;
 
-import com.github.drakescraft_labs.slimefun4.api.MinecraftVersion;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
-import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
-import com.github.drakescraft_labs.slimefun4.implementation.Slimefun;
-import com.github.drakescraft_labs.slimefun4.implementation.items.blocks.UnplaceableBlock;
+import io.github.thebusybiscuit.slimefun4.api.MinecraftVersion;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
+import io.github.thebusybiscuit.slimefun4.implementation.items.blocks.UnplaceableBlock;
 
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;

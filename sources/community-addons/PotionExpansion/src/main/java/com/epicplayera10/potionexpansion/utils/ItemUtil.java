@@ -2,8 +2,8 @@ package com.epicplayera10.potionexpansion.utils;
 
 import com.epicplayera10.potionexpansion.Settings;
 
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
-import com.github.drakescraft_labs.slimefun4.utils.ChatUtils;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.utils.ChatUtils;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Color;

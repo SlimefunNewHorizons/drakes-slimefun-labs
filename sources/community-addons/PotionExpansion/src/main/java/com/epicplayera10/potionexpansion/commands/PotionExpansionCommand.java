@@ -3,7 +3,7 @@ package com.epicplayera10.potionexpansion.commands;
 import com.epicplayera10.potionexpansion.PotionExpansion;
 import com.epicplayera10.potionexpansion.api.effects.EffectsManager;
 
-import com.github.drakescraft_labs.slimefun4.libraries.dough.common.ChatColors;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.common.ChatColors;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
