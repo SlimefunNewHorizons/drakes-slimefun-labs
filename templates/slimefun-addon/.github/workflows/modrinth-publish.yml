@@ -70,6 +70,20 @@ jobs:
         run: |
           set -euo pipefail
 
+          # Solo se publica un plugin Maven: sin pom.xml (rama solo docs) o sin plugin.yml en las
+          # fuentes (libreria) Modrinth rechaza la subida y el run queda en rojo.
+          if [ ! -f pom.xml ]; then
+            echo "publicar=false" >> "$GITHUB_OUTPUT"
+            echo "motivo=sin pom.xml: nada que compilar" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if ! find . -path ./node_modules -prune -o -path '*src/main/resources/*' \
+               \( -name plugin.yml -o -name paper-plugin.yml \) -print | grep -q .; then
+            echo "publicar=false" >> "$GITHUB_OUTPUT"
+            echo "motivo=sin plugin.yml: es una libreria, no un plugin" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
           # El disparo manual manda: si se pidio force, se publica.
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force }}" = "true" ]; then
             echo "publicar=true"  >> "$GITHUB_OUTPUT"
