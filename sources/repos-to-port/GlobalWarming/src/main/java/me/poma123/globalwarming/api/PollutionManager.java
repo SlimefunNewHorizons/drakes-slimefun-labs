@@ -5,7 +5,7 @@
  *  com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem
  *  com.github.drakescraft_labs.slimefun4.libraries.dough.config.Config
  *  javax.annotation.Nonnull
- *  org.apache.commons.lang.Validate
+ *  org.apache.commons.lang3.Validate
  *  org.bukkit.Bukkit
  *  org.bukkit.Location
  *  org.bukkit.Material
@@ -22,7 +22,7 @@ import java.util.Map;
 import javax.annotation.Nonnull;
 import me.poma123.globalwarming.GlobalWarmingPlugin;
 import me.poma123.globalwarming.api.events.AsyncWorldPollutionChangeEvent;
-import org.apache.commons.lang.Validate;
+import org.apache.commons.lang3.Validate;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;

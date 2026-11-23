@@ -5,7 +5,7 @@
  *  com.github.drakescraft_labs.slimefun4.implementation.Slimefun
  *  com.github.drakescraft_labs.slimefun4.libraries.dough.common.ChatColors
  *  javax.annotation.Nonnull
- *  org.apache.commons.lang.Validate
+ *  org.apache.commons.lang3.Validate
  *  org.bukkit.command.Command
  *  org.bukkit.command.CommandExecutor
  *  org.bukkit.command.CommandSender
@@ -25,7 +25,7 @@ import javax.annotation.Nonnull;
 import me.poma123.globalwarming.GlobalWarmingPlugin;
 import me.poma123.globalwarming.commands.SubCommand;
 import me.poma123.globalwarming.commands.subcommands.SubCommands;
-import org.apache.commons.lang.Validate;
+import org.apache.commons.lang3.Validate;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;

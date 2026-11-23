@@ -3,13 +3,13 @@
  * 
  * Could not load the following classes:
  *  javax.annotation.Nonnull
- *  org.apache.commons.lang.Validate
+ *  org.apache.commons.lang3.Validate
  */
 package me.poma123.globalwarming.api;
 
 import javax.annotation.Nonnull;
 import me.poma123.globalwarming.api.TemperatureType;
-import org.apache.commons.lang.Validate;
+import org.apache.commons.lang3.Validate;
 
 public class Temperature {
     private double celsiusValue;

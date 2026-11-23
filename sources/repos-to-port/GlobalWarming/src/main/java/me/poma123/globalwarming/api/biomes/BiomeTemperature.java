@@ -3,12 +3,12 @@
  * 
  * Could not load the following classes:
  *  javax.annotation.Nonnull
- *  org.apache.commons.lang.Validate
+ *  org.apache.commons.lang3.Validate
  */
 package me.poma123.globalwarming.api.biomes;
 
 import javax.annotation.Nonnull;
-import org.apache.commons.lang.Validate;
+import org.apache.commons.lang3.Validate;
 
 public class BiomeTemperature {
     private final double temperature;
