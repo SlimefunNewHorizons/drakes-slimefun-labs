@@ -8,7 +8,7 @@ on:
       - '.yamllint'
   pull_request:
     branches:
-      - 1.21-latin
+      - main
     paths:
       - '.github/**/*.yml'
       - '.github/**/*.yaml'
