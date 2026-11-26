@@ -5,23 +5,11 @@
 # sustituirlos por los checks de ESTE workflow (titulo "CI Monorepo 1.21" + nombre de cada job).
 # El historial de ejecuciones viejas no se puede borrar desde git; en GitHub: Actions -> workflow antiguo -> "…" -> delete (por workflow) o dejar archivado.
 
-name: CI Monorepo 1.21
+name: CI Monorepo 1.21 (Legacy Archive)
 
+# Disabled automatic push/pull_request triggers: drakes-slimefun-labs is now a legacy read-only archive (commit 727c03db).
+# Each addon builds and releases from its standalone repository (see docs/CANONICAL_SOURCES.md).
 on:
-  push:
-    branches: ["main"]
-    paths-ignore:
-      - "**.md"
-      - "docs/**"
-      - ".gitignore"
-      - "PortTextura/**"
-  pull_request:
-    branches: ["main"]
-    paths-ignore:
-      - "**.md"
-      - "docs/**"
-      - ".gitignore"
-      - "PortTextura/**"
   workflow_dispatch:
 
 concurrency:

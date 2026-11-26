@@ -1,16 +1,8 @@
-name: Release addons criticos
+name: Release addons criticos (Legacy Archive)
 
+# Disabled automatic push triggers: drakes-slimefun-labs is now a legacy read-only archive (commit 727c03db).
+# FluffyMachines-drake, DankTech2-Drake, ExtraUtils-drake, and dough-core build in their standalone repositories.
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'sources/repos-to-port/FluffyMachines/**'
-      - 'sources/community-addons/DankTech2/**'
-      - 'sources/repos-to-port/ExtraUtils/**'
-      - 'sources/drakes-labs-autoupdate/**'
-      - 'sources/dough-core/**'
-      - 'scripts/ci/install-slimefun-legacy-alias.sh'
-      - '.github/workflows/release-critical-addons.yml'
   workflow_dispatch:
 
 concurrency:
